@@ -1,6 +1,6 @@
-#ºê·ĞÁî2 ºĞÇØÇÕ (ºê·çÆ®Æ÷½º)
+#ë¸Œë¡ ì¦ˆ2 ë¶„í•´í•© (ë¸Œë£¨íŠ¸í¬ìŠ¤)
 def is_cr(num,N):
-    # ´ë»óÀÌ NÀÇ »ı¼ºÀÚÀÎÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+    # ëŒ€ìƒì´ Nì˜ ìƒì„±ìì¸ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜
     summ = num +sum(list(map(int,str(num))))
     if  summ== N:
         return 1
@@ -12,7 +12,7 @@ N = int(input())
 num = N
 min_creator = N+1
 
-# N~1±îÁö ³»·Á°¡¸é¼­ Å½»ö
+# N~1ê¹Œì§€ ë‚´ë ¤ê°€ë©´ì„œ íƒìƒ‰
 while num>0:
     if is_cr(num,N):
         min_creator = num
